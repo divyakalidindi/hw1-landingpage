@@ -1,1 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
 
+.main-page {
+  /*Image source © Divya Kalidindi*/
+  /*background-image: url(http://i.imgur.com/3ByRWI3.jpg);
+  background-position: center;
+  background-size: cover;*/
+  background-color: purple;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+/*http://stackoverflow.com/questions/18694439/how-to-position-an-element-at-the-top-left-corner-of-a-page-using-css*/
+#title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 30px;
+}
+
+#sign-in {
+  border-style: solid;
+  border-color: lightgrey;
+
+}
+#sign-in:hover:not(.active) {
+  border-color: white;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*http://www.w3schools.com/css/css_navbar.asp*/
+li a {
+    display: flex;
+    color: lightgrey;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    border-radius: 2px;
+    color: white;
+}
+
+.button:hover:not(active) {
+  background-color: teal;
+}
+
+.nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 30px;
+  float: right;
+  font-size: 20px;
+}
+
+.nav p {
+  padding-left: 20px;
+  font-size: 45px;
+  text-decoration: none;
+}
+
+.title-info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  font-size: 20px;
+}
+
+
+.button-and-text {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: rgba(0,0,0, 0.85);
+  border-radius: 8px;
+}
+
+.button-and-text p {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+input[type=text], select {
+    padding: 10px 8px;
+    margin: 4px 0.01px;
+    border: 1px solid;
+    border-radius: 2px;
+    font: inherit;
+    font-size: 25px;
+    color: lightgrey;
+}
+
+.button {
+  /*color: medium seagreen, found at http://www.rapidtables.com/web/color/green-color.htm*/
+  background-color: #20B2AA;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  font: inherit;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.gradient {
+  background: linear-gradient(rgba(0, 0, 0, 0) 0px, rgb(0, 0, 0) 67%);
+}
+
+.links {
+  list-style-type: none;
+
+}
