@@ -42,6 +42,20 @@ li {
   list-style-type: none;
 }
 
+.list-unit {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style-type: none;
+  justify-content: flex-start;
+  float: left;
+  margin: 100px;
+  font-size: 15px;
+}
+
+.lists {
+  text-align: center;
+}
+
 /*http://www.w3schools.com/css/css_navbar.asp*/
 li a {
     display: flex;
@@ -127,11 +141,15 @@ input[type=text], select {
   cursor: pointer;
 }
 
+
+
+
+
 .gradient {
   background: linear-gradient(rgba(0, 0, 0, 0) 0px, rgb(0, 0, 0) 67%);
 }
 
-.links {
+/*.links {
   list-style-type: none;
 
-}
+}*/
