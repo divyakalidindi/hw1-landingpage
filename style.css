@@ -5,28 +5,28 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: 'Raleway', sans-serif;
-  overflow-y: hidden;
 }
 
 .main-page {
   /*Image source © Divya Kalidindi*/
-  /*background-image: url(http://i1.wp.com/wiredcosmos.com/wp-content/uploads/2013/09/Prawn-Nebula.jpg);
+  background-image: url(http://ohtoptens.com/wp-content/uploads/2015/05/Geometric-Wallpaper-HD-27.jpg);
   background-position: center;
-  background-size: cover;*/
-  background-color: purple;
+  background-size: cover;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   height: 100%;
-  width: 100%;
+  width: auto;
+  position: relative;
 }
 
 /*http://stackoverflow.com/questions/18694439/how-to-position-an-element-at-the-top-left-corner-of-a-page-using-css*/
 #title {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   font-size: 30px;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 #sign-in {
@@ -178,11 +178,18 @@ input[type=text], select {
 
 /*
 adapted from http://webdesignerwall.com/tutorials/css-responsive-navigation-menu*/
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px){
+
+  .main-page {
+    display: block;
+    overflow: auto;
+    /*float: right;*/
+}
+
 .nav {
 	position: relative;
   flex-direction: column;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 .nav ul {
 	width: 180px;
@@ -228,37 +235,44 @@ input[type=text], select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 60px;
   text-align: center;
+
 }
 
 .links {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   justify-content: space-around;
+  padding-bottom: 200px;
 }
 
 .list-unit li:first-child {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  font-size: 20px;
 }
 
 .list-unit li {
   display: none; /* hide all <li> items */
   margin: 0;
+  font-size: 10px;
 }
 
 .footer {
   text-align: right;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   width: 100%;
   height: 20px;
   padding-bottom: 40px;
   background-color: black;
+  margin: 0 auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .footer #contact {
@@ -273,34 +287,3 @@ input[type=text], select {
   padding-right: 10px;
 }
 }
-  	/*.nav a {
-  		display: block;
-  		padding: 5px 5px 5px 32px;
-  		text-align: right;
-  	}*/
-  	/*.nav .current a {
-  		background: none;
-  		color: #black;
-  	}*/
-
-  	/* on nav hover */
-  	/*.nav ul:hover {
-  		background-image: none;
-  	}*/
-  	/*.nav ul:hover li {
-  		display: none;
-      flex-direction: column;
-  		margin: 0 0 5px;
-  	}*/
-  	/*.nav ul:hover .current {
-      color: purple;
-  		background: url(images/icon-check.png) no-repeat 10px 7px;
-  	}*/
-
-  	/* right nav */
-  	/*.nav.right ul {
-  		top: 0;
-  		right: 0;
-  	}*/
-
-  }
