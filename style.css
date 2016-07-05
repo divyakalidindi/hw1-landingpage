@@ -5,6 +5,7 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 
 .main-page {
@@ -63,6 +64,11 @@ a:hover:not(.active) {
   padding-top: 5px;
   font-size: 20px;
 }
+
+.button:hover:not(active) {
+  background-color: teal;
+}
+
 /*button and text unit with bottom message*/
 .button-and-text {
   padding-top: 15px;
@@ -72,7 +78,7 @@ a:hover:not(.active) {
   border-radius: 8px;
 }
 
-/*text underneath input/button field*/
+/*text underneath input/button fields*/
 .button-and-text p {
   display: flex;
   justify-content: center;
@@ -82,13 +88,13 @@ a:hover:not(.active) {
 /*input field for email address*/
 /*adapted from information at http://www.w3schools.com/css/css_attribute_selectors.asp*/
 input[type=text], select {
-  padding: 10px;
-  margin: 1px;
+  padding: 10px 8px;
+  margin: 4px 0.01px;
   border: 1px solid;
   border-radius: 2px;
-  color: lightgrey;
   font: inherit;
   font-size: 25px;
+  color: lightgrey;
 }
 
 /*button specfications*/
@@ -98,17 +104,13 @@ input[type=text], select {
   border-radius: 2px;
   border: none;
   color: white;
-  padding: 12px;
-  font: inherit;
-  font-size: 25px;
-  margin: 4px;
-  cursor: pointer;
+  padding: 12px 20px;
   text-align: center;
   text-decoration: none;
-}
-
-.button:hover:not(active) {
-  background-color: teal;
+  font: inherit;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 /*set of links at the bottom*/
@@ -121,25 +123,24 @@ input[type=text], select {
 
 /*individual set of links */
 .list-unit {
-  font-size: 15px;
   list-style-type: none;
+  font-size: 15px;
 }
 
-
 .footer {
-  margin: auto;
   display: flex;
   justify-content: space-between;
   flex-flow: row;
+  margin: auto;
 }
 
 .footer ul {
   display: flex;
   flex-flow: row nowrap;
+  list-style-type: none;
   justify-content:flex-end;
   padding: 50px;
   margin-bottom: 130px;
-  list-style-type: none;
 }
 
 .footer li a {
@@ -182,8 +183,11 @@ input[type=text], select {
 .title-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 10px;
   text-align: center;
+
 }
 
 .links {
@@ -209,8 +213,8 @@ input[type=text], select {
 .footer li {
   display: flex;
   flex-direction: row;
-  list-style-type: none;
   justify-content: flex-end;
   padding-right: 10px;
+  list-style-type: none;
 }
 }

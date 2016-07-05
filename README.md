@@ -1,6 +1,7 @@
 #README.MD for Homework 1-Landing Page
 
 ## Divya Kalidindi
+## Website:
 
 ##Initial Setup
 I originally set up the page as per the directions of the assignment, as seen below in the screencap. The basic layout consists of a navigation bar, along with titles, an email address form, "create" button, and a few links at the bottom of the page.
@@ -10,16 +11,19 @@ I originally set up the page as per the directions of the assignment, as seen be
 ##Features
 I mostly followed the example provided in the assignment instructions, and in addition, implemented some of the features described below:
 
-- The navigation bar at the top has a hover feature where the text changes 	from light grey to white. Additionally, when the mouse hovers over the 	navigation bar, the cursor changes to a pointer.
+- The navigation bar at the top has a hover feature where the text changes 	from light grey to white. Additionlly, when the mouse hovers over the 	navigation bar, the cursor changes to a pointer.
 - The teal "create" button also changes to a darker color when the mouse hovers over it.
-- The footer buttons change from black to white when hovered over;
+- The footer buttons change from black to white.
 - Border radius is implemented for sign-in, as well as input and button fields.
 
 ##Finished Page
-![]()
+![](http://i.imgur.com/L6IIQD9.png)
 
 ## Mobile Version
-![]()
+######Note: The footer containing contact information can be seen when the screen is scrolled to the bottom.
+![](http://i.imgur.com/PnCRSdx.png?1)
+![](http://i.imgur.com/f8uaSlj.png?1)
+
 
 ## Issues
 Some issues I encountered through this lab were:
