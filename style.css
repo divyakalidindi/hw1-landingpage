@@ -8,7 +8,6 @@ html, body {
 }
 
 .main-page {
-  /*Image source © Divya Kalidindi*/
   background-image: url(http://ohtoptens.com/wp-content/uploads/2015/05/Geometric-Wallpaper-HD-27.jpg);
   background-size: cover;
   background-position: center;
@@ -16,37 +15,9 @@ html, body {
   flex-flow: column nowrap;
 }
 
-/*http://stackoverflow.com/questions/18694439/how-to-position-an-element-at-the-top-left-corner-of-a-page-using-css*/
-
-#sign-in {
-  border-style: solid;
-  border-radius: 4px;
-  border-color: lightgrey;
-}
-
-#sign-in:hover:not(.active) {
-  border-color: white;
-  color: white;
-}
-
 li {
   list-style-type: none;
 }
-
-/*edit before turning in!*/
-.links {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  padding-top: 15px;
-  /*padding-bottom: 15px;*/
-}
-
-.list-unit {
-  list-style-type: none;
-  font-size: 15px;
-}
-
 
 /*http://www.w3schools.com/css/css_navbar.asp*/
 li a {
@@ -61,10 +32,6 @@ a:hover:not(.active) {
   color: white;
 }
 
-.button:hover:not(active) {
-  background-color: teal;
-}
-
 .nav ul {
   display: flex;
   flex-flow: row nowrap;
@@ -75,6 +42,19 @@ a:hover:not(.active) {
   font-size: 20px;
 }
 
+/*http://stackoverflow.com/questions/18694439/how-to-position-an-element-at-the-top-left-corner-of-a-page-using-css*/
+.nav #sign-in {
+  border-style: solid;
+  border-radius: 4px;
+  border-color: lightgrey;
+}
+
+.nav #sign-in:hover:not(.active) {
+  border-color: white;
+  color: white;
+}
+
+/*CS webdev titles*/
 .title-info {
   display: flex;
   flex-flow: column nowrap;
@@ -83,81 +63,89 @@ a:hover:not(.active) {
   padding-top: 5px;
   font-size: 20px;
 }
-
+/*button and text unit with bottom message*/
 .button-and-text {
   padding-top: 15px;
-  /*padding-bottom: 10px;*/
   padding-right: 20px;
   padding-left: 20px;
   background: rgba(0,0,0, 0.7);
   border-radius: 8px;
 }
 
+/*text underneath input/button field*/
 .button-and-text p {
   display: flex;
   justify-content: center;
   font-size: 15px;
 }
 
+/*input field for email address*/
+/*adapted from information at http://www.w3schools.com/css/css_attribute_selectors.asp*/
 input[type=text], select {
-  padding: 10px 8px;
-  margin: 4px 0.01px;
+  padding: 10px;
+  margin: 1px;
   border: 1px solid;
   border-radius: 2px;
+  color: lightgrey;
   font: inherit;
   font-size: 25px;
-  color: lightgrey;
 }
 
+/*button specfications*/
 .button {
   /*color: medium seagreen, found at http://www.rapidtables.com/web/color/green-color.htm*/
   background-color: #20B2AA;
   border-radius: 2px;
   border: none;
   color: white;
-  padding: 12px 20px;
-  text-align: center;
-  text-decoration: none;
+  padding: 12px;
   font: inherit;
   font-size: 25px;
-  margin: 4px 2px;
+  margin: 4px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover:not(active) {
+  background-color: teal;
+}
+
+/*set of links at the bottom*/
+.links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+/*individual set of links */
+.list-unit {
+  font-size: 15px;
+  list-style-type: none;
 }
 
 
 .footer {
-  /*text-align: right;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 20px;
-  padding-bottom: 40px;*/
+  margin: auto;
   display: flex;
   justify-content: space-between;
   flex-flow: row;
-  margin: auto;
 }
 
 .footer ul {
   display: flex;
   flex-flow: row nowrap;
-  list-style-type: none;
   justify-content:flex-end;
   padding: 50px;
   margin-bottom: 130px;
+  list-style-type: none;
 }
 
 .footer li a {
   color: black;
 }
 
-/*
-
-.footer #icon {
-  display: flex;
-  flex-direction: column;
-  font-size: 25px;
-}*/
 .footer #contact {
   font-size: 25px;
 }
@@ -194,20 +182,16 @@ input[type=text], select {
 .title-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-top: 10px;
   text-align: center;
-
 }
 
 .links {
   display: flex;
   flex-flow: column;
-  align-items: flex-start;
   justify-content: space-between;
-  /*padding-bottom: px;*/
   padding-top: 20px;
+  align-items: flex-start;
 }
 
 .list-unit .link-head {
@@ -221,12 +205,6 @@ input[type=text], select {
   display: none; /* hide all <li> items */
   margin: 0;
 }
-
-/*.footer #icon {
-  display: flex;
-  flex-direction: column;
-  font-size: 25px;
-}*/
 
 .footer li {
   display: flex;
