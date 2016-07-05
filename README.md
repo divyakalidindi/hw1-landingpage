@@ -1,7 +1,7 @@
 #README.MD for Homework 1-Landing Page
 
 ## Divya Kalidindi
-## Website:
+## Website: http://tranquil-key.surge.sh/ (hosted using Surge platform)
 
 ##Initial Setup
 I originally set up the page as per the directions of the assignment, as seen below in the screencap. The basic layout consists of a navigation bar, along with titles, an email address form, "create" button, and a few links at the bottom of the page.
